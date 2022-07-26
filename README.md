@@ -1,0 +1,5 @@
+run with
+
+```
+./gradlew benchmark
+```
