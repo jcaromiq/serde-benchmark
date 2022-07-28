@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit
 
 @State(Scope.Benchmark)
 @Fork(1)
-@Warmup(iterations = 0)
+@Warmup(iterations = 5)
 @Measurement(iterations = 5, time = 1, timeUnit = TimeUnit.SECONDS)
 
 class JacksonBenchmark {
