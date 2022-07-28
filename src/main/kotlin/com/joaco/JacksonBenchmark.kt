@@ -25,12 +25,12 @@ class JacksonBenchmark {
 
 
     @Benchmark
-    fun serializeWithInitializedMapper(): String {
+    fun serialize(): String {
         return initializedMapper.writeValueAsString(movie)
     }
 
     @Benchmark
-    fun deserializeWithInitializedMapper(): Movie {
+    fun deserialize(): Movie {
         return initializedMapper.readValue(json)
     }
 
