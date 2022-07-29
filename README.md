@@ -1,7 +1,7 @@
 # BENCHMARKING SERDE LIBRARIES IN JVM
 
 Benchmark most important libraries for Serialize/Deserialize in the jvm
-* 
+
 * Jackson 2.13.3
 * Kotlinx Serialization 1.4.0-RC
 * GSON 2.9.0
