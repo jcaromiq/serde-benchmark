@@ -2,11 +2,11 @@
 
 Benchmark most important libraries for Serialize/Deserialize in the jvm
 
-* Jackson 2.13.3
-* Kotlinx Serialization 1.4.0-RC
-* GSON 2.9.0
+* [Jackson 2.13.3](https://github.com/FasterXML/jackson-core)
+* [Kotlinx Serialization 1.4.0-RC](https://github.com/Kotlin/kotlinx.serialization)
+* [GSON 2.9.0](https://github.com/google/gson)
 
-Using JMH 1.35 as Benchmark tool
+Using [JMH 1.35](https://github.com/openjdk/jmh) as Benchmark tool
 
 ## HOW TO USE
 ```
