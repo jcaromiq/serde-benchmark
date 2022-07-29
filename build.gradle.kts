@@ -2,6 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 val jacksonVersion = "2.13.3"
 val kotlinxBenchmarkVersion = "0.4.4"
+val kotlinxSerializationVersion = "1.4.0-RC"
+val gsonVersion = "2.9.0"
 
 plugins {
     kotlin("jvm") version "1.7.10"
@@ -24,7 +26,8 @@ dependencies {
 
 
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0-RC")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:${kotlinxSerializationVersion}")
+    implementation("com.google.code.gson:gson:${gsonVersion}")
 }
 
 tasks.test {
