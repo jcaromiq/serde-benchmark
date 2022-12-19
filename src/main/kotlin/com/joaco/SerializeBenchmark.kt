@@ -37,6 +37,9 @@ class SerializeBenchmark {
     fun kotlinx() = Json.encodeToString(movie)
 
     @Benchmark
+    fun kotlinxWay() = Json.encodeToString(Movie.serializer(),movie)
+
+    @Benchmark
     fun kotlinxMemoized() = Json.encodeToString(serializer, movie)
 
     @Benchmark

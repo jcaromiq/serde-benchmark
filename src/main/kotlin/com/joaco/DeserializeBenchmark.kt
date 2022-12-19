@@ -38,6 +38,9 @@ class DeserializeBenchmark {
     fun kotlinx() = Json.decodeFromString<Movie>(json)
 
     @Benchmark
+    fun kotlinxWay() = Json.decodeFromString(Movie.serializer(),json)
+
+    @Benchmark
     fun kotlinxMemoized() = Json.decodeFromString(serializer, json)
 
     @Benchmark
