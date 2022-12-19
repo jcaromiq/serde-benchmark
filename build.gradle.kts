@@ -1,15 +1,15 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-val jacksonVersion = "2.13.3"
-val kotlinxBenchmarkVersion = "0.4.4"
+val jacksonVersion = "2.14.1"
+val kotlinxBenchmarkVersion = "0.4.6"
 val kotlinxSerializationVersion = "1.4.1"
-val gsonVersion = "2.9.0"
+val gsonVersion = "2.10"
 
 plugins {
-    kotlin("jvm") version "1.7.10"
-    id("org.jetbrains.kotlinx.benchmark") version "0.4.4"
-    id("org.jetbrains.kotlin.plugin.allopen") version "1.7.10"
-    kotlin("plugin.serialization") version "1.7.10"
+    kotlin("jvm") version "1.7.21"
+    id("org.jetbrains.kotlinx.benchmark") version "0.4.6"
+    id("org.jetbrains.kotlin.plugin.allopen") version "1.7.21"
+    kotlin("plugin.serialization") version "1.8.0-RC"
     application
 }
 
@@ -35,7 +35,7 @@ tasks.test {
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "17"
 }
 
 application {
@@ -54,7 +54,7 @@ benchmark {
     targets {
         register("main") {
             this as kotlinx.benchmark.gradle.JvmBenchmarkTarget
-            jmhVersion = "1.35"
+            jmhVersion = "1.36"
         }
     }
 }
