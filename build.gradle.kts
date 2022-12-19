@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 val jacksonVersion = "2.13.3"
 val kotlinxBenchmarkVersion = "0.4.4"
-val kotlinxSerializationVersion = "1.4.0-RC"
+val kotlinxSerializationVersion = "1.4.1"
 val gsonVersion = "2.9.0"
 
 plugins {
