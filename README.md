@@ -17,20 +17,20 @@ Using [JMH 1.36](https://github.com/openjdk/jmh) as Benchmark tool
 
 ```
 Benchmark                              Mode  Cnt        Score        Error  Units
-DeserializeBenchmark.gson             thrpt    5    69894.573 ± 128595.241  ops/s
-DeserializeBenchmark.gsonMemoized     thrpt    5  1522166.825 ±  60386.010  ops/s
-DeserializeBenchmark.jackson          thrpt    5    22026.399 ±    589.403  ops/s
-DeserializeBenchmark.jacksonMemoized  thrpt    5   974237.538 ±   9846.925  ops/s
-DeserializeBenchmark.kotlinx          thrpt    5  1789183.875 ±  74900.579  ops/s
-DeserializeBenchmark.kotlinxMemoized  thrpt    5  2796742.540 ±  83919.359  ops/s
-DeserializeBenchmark.kotlinxWay       thrpt    5  2842240.038 ±  69050.209  ops/s
-SerializeBenchmark.gson               thrpt    5   149364.917 ±   1333.079  ops/s
-SerializeBenchmark.gsonMemoized       thrpt    5  1417857.711 ±   9613.048  ops/s
-SerializeBenchmark.jackson            thrpt    5    16149.307 ±    423.247  ops/s
-SerializeBenchmark.jacksonMemoized    thrpt    5  3143054.962 ±  57989.535  ops/s
-SerializeBenchmark.kotlinx            thrpt    5  2290690.642 ± 724352.666  ops/s
-SerializeBenchmark.kotlinxMemoized    thrpt    5  4838642.669 ± 230345.836  ops/s
-SerializeBenchmark.kotlinxWay         thrpt    5  4868722.910 ± 181528.326  ops/s
+DeserializeBenchmark.gson             thrpt    5   113451.693 ±  21302.048  ops/s
+DeserializeBenchmark.gsonMemoized     thrpt    5  1258932.806 ± 202443.061  ops/s
+DeserializeBenchmark.jackson          thrpt    5     7320.871 ±  11382.451  ops/s
+DeserializeBenchmark.jacksonMemoized  thrpt    5   870175.114 ±  56983.868  ops/s
+DeserializeBenchmark.kotlinx          thrpt    5  1472199.156 ± 458727.010  ops/s
+DeserializeBenchmark.kotlinxMemoized  thrpt    5  2616191.702 ± 274387.406  ops/s
+DeserializeBenchmark.kotlinxWay       thrpt    5  2663739.907 ± 522767.480  ops/s
+SerializeBenchmark.gson               thrpt    5   120116.597 ±  72109.725  ops/s
+SerializeBenchmark.gsonMemoized       thrpt    5  1227384.510 ± 284068.641  ops/s
+SerializeBenchmark.jackson            thrpt    5    11743.604 ±    378.925  ops/s
+SerializeBenchmark.jacksonMemoized    thrpt    5  2899099.082 ±  59709.978  ops/s
+SerializeBenchmark.kotlinx            thrpt    5  2126410.027 ± 175240.199  ops/s
+SerializeBenchmark.kotlinxMemoized    thrpt    5  4344792.051 ± 392252.976  ops/s
+SerializeBenchmark.kotlinxWay         thrpt    5  4185206.404 ± 824291.419  ops/s
 
 ```
 ### DESERIALIZE
