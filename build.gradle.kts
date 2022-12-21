@@ -3,12 +3,13 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 val jacksonVersion = "2.14.1"
 val kotlinxBenchmarkVersion = "0.4.6"
 val kotlinxSerializationVersion = "1.4.1"
+val kotlinReflectVersion = "1.7.22"
 val gsonVersion = "2.10"
 
 plugins {
-    kotlin("jvm") version "1.7.21"
+    kotlin("jvm") version "1.7.22"
     id("org.jetbrains.kotlinx.benchmark") version "0.4.6"
-    id("org.jetbrains.kotlin.plugin.allopen") version "1.7.21"
+    id("org.jetbrains.kotlin.plugin.allopen") version "1.7.22"
     kotlin("plugin.serialization") version "1.8.0-RC"
     application
 }
@@ -25,8 +26,11 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-benchmark-runtime:$kotlinxBenchmarkVersion")
 
 
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion") {
+        exclude("org.jetbrains.kotlin:kotlin-reflect")
+    }
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:${kotlinxSerializationVersion}")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinReflectVersion}")
     implementation("com.google.code.gson:gson:${gsonVersion}")
 }
 
